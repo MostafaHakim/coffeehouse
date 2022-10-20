@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tailwind CSS</title>
+    
+</head>
+<body class="w-full h-screen relative">
+    <!-- ===================Header Section Start=============== -->
+    <header class="w-full absolute top-0 flex flex-row justify-between items-center bg-stone-900 bg-opacity-50 px-4">
+
+        <div class="list-none text-3xl text-white lg:hidden order-1 ">
+            <li class="barBtn"><i class="fa-solid fa-bars "></i></li>
+            <li class="hidden crossBar"><i class="fa-solid fa-x "></i></li>
+        </div>
+
+        <div class="flex flex-col items-start order-2 justify-start top-0"><img src="./dist/img/logorm.png" alt=""></div>
+       
+        <div class="-translate-x-[600px] flex-col transition duration-700  w-1/2 h-screen  top-[88px] lg:hidden order-3 list-none absolute bg-gray-500 bg-opacity-80 divide-y-2 menuShow">
+            <li class="microMenu">
+                <a href="#" class="text-white font-rajdhani font-semibold text-lg underline-none">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </li>  
+            <li class="microMenu"><a href="#" class="text-white font-rajdhani font-semibold text-lg underline-none">Home</a></li>
+            <li class="microMenu"><a href="#" class="text-white font-rajdhani font-semibold text-lg underline-none">Page</a></li>
+            <li class="microMenu"><a href="#" class="text-white font-rajdhani font-semibold text-lg underline-none">Protfoio</a></li>
+            <li class="microMenu"><a href="#" class="text-white font-rajdhani font-semibold text-lg underline-none">blog</a></li>
+            <li class="microMenu"><a href="#" class="text-white font-rajdhani font-semibold text-lg underline-none">shop</a></li>
+            <li class="microMenu"><a href="#" class="text-white font-rajdhani font-semibold text-lg underline-none">page</a></li>
+            <li class="microMenu"><a href="#" class="text-white font-rajdhani font-semibold text-lg underline-none">elements</a></li>
+            <li class="microMenu"><a href="#" class="text-white font-rajdhani font-semibold text-lg underline-none"></a></li>
+        </div>
+
+        <div class="hidden lg:flex lg:flex-row list-none order-1 lg:order-3 listMenu">
+                <li class="listItems"><a href="#" class="text-white font-rajdhani font-semibold text-lg underline-none">Home</a></li>
+                <li class="listItems"><a href="#" class="text-white font-rajdhani font-semibold text-lg underline-none">Page</a></li>
+                <li class="listItems"><a href="#" class="text-white font-rajdhani font-semibold text-lg underline-none">Protfoio</a></li>
+                <li class="listItems"><a href="#" class="text-white font-rajdhani font-semibold text-lg underline-none">blog</a></li>
+                <li class="listItems"><a href="#" class="text-white font-rajdhani font-semibold text-lg underline-none">shop</a></li>
+                <li class="listItems"><a href="#" class="text-white font-rajdhani font-semibold text-lg underline-none">page</a></li>
+                <li class="listItems"><a href="#" class="text-white font-rajdhani font-semibold text-lg underline-none">elements</a></li>
+                <li class="iconFontAwsome">
+                    <a href="#" class="text-white font-rajdhani font-semibold text-lg underline-none">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </li>
+                <li class="iconFontAwsome">
+                    <a href="#" class="text-white font-rajdhani font-semibold text-lg underline-none">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </li>            
+        </div>
+    </header>
+     <!-- ===================Header Section End=============== -->
+
+
+
+     <!-- ===================Hero Section Start=============== -->
+     <section class="w-full h-3/4 ">
+        <div class="w-full h-full flex flex-row justify-center  items-center bg-no-repeat bg-cover bg-left-top" style="background-image:url('./dist/img/bg-5.jpg')">
+            <h1 class="text-white bg-stone-900 bg-opacity-50 rounded-br-full rounded-tl-full font-rajdhani px-8 py-2  text-4xl md:text-6xl xl:8xl uppercase">What we offer!</h1>
+        </div>
+    </section>
+    <!-- ===================Hero Section End=============== -->
+
+
+    <!-- ===================Brand Section Start=============== -->
+    <section class="w-full h-3/4 xl:h-1/2">
+        <div class="w-full h-full flex flex-col justify-center items-center space-y-8 p-4">
+            <h2 class="text-3xl xl:text-4xl font-semibold uppercase">Coffee Brands</h2>
+            <img src="./dist/img/title-separator.png" alt="">
+            <p class="text-center text-lg lg:text-xl lg:w-1/2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor recusandae sed dolore tenetur nesciunt ipsam.</p>
+        </div>
+    </section>
+    <!-- ===================Brand Section End=============== -->
+
+
+
+    <!-- ===================Catagori Section Start=============== -->
+    
+        <section class="w-full grid md:grid-cols-2 xl:grid-cols-4 pb-12">
+            <div class="w-full h-full flex flex-col justify-center items-center p-4 md:grid-cols-1">
+                <img src="./dist/img/cup-2.png" alt="Coffee Cup">
+                <h2 class="text-3xl font-semibold font-fuzzy uppercase">Coffee Types</h2>
+                <p class="text-center text-lg lg:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor recusandae sed dolore tenetur nesciunt ipsam.</p>
+            </div>
+            <div class="w-full h-full flex flex-col justify-center items-center p-4 md:grid-cols-1">
+                <img src="./dist/img/beens.png" alt="Coffee Cup">
+                <h2 class="text-3xl font-semibold font-fuzzy uppercase">different beens</h2>
+                <p class="text-center text-lg lg:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor recusandae sed dolore tenetur nesciunt ipsam.</p>
+            </div>
+            <div class="w-full h-full flex flex-col justify-center items-center p-4 md:grid-cols-1">
+                <img src="./dist/img/cup.png" alt="Coffee Cup">
+                <h2 class="text-3xl font-semibold font-fuzzy uppercase">coffee & pastry</h2>
+                <p class="text-center text-lg lg:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor recusandae sed dolore tenetur nesciunt ipsam.</p>
+            </div>
+            <div class="w-full h-full flex flex-col justify-center items-center p-4 md:grid-cols-1">
+                <img src="./dist/img/beens-2.png" alt="Coffee Cup">
+                <h2 class="text-3xl font-semibold font-fuzzy uppercase">Coffee to go</h2>
+                <p class="text-center text-lg lg:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor recusandae sed dolore tenetur nesciunt ipsam.</p>
+            </div>
+            
+        </section>  
+
+    <!-- ===================Catagori Section End=============== -->
+
+    <!-- ===================Collect & Precess Section Start=============== -->
+
+    
+        <div class="grid md:grid-cols-2 xl:grid-cols-4">
+            <section class="w-full h-96 md:grid-cols-1 md:order-1 xl:order-1">
+                <div class="w-full h-full flex flex-row justify-center items-center bg-no-repeat bg-cover bg-center" style="background-image:url('./dist/img/bg-01.jpeg')"> 
+                </div>
+            </section>
+    
+            <section class="w-full h-96 md:grid-cols-1 md:order-2  xl:order-2">
+                <div class="w-full h-full bg-no-repeat bg-cover bg-left-top" style="background-image:url('./dist/img/beens-2.png')">
+                    <div class=" w-full h-full bg-stone-900 flex flex-col justify-center items-center bg-opacity-50">
+                        <h2 class="text-white font-poppins px-3 py-2  text-4xl uppercase">Hours</h2>
+                        <p class="font-fuzzy text-white font-bold text-xl">Mon to Fri // 9:00 - 23:00</p>
+                        <p class="font-fuzzy text-white font-bold text-xl">Sat // 10:00 - 13:00</p>
+                        <p class="font-fuzzy text-white font-bold text-xl">Sun // Close</p>
+                    </div>
+                </div>
+            </section>
+            <!-- ===================Collect & Precess Section divide=============== -->
+            <section class="w-full h-96 md:grid-cols-1 md:order-4  xl:order-3">
+                <div class="w-full h-full flex flex-row justify-center items-center bg-no-repeat bg-cover bg-center" style="background-image:url('./dist/img/bg-02.jpeg')"> 
+                </div>
+            </section>
+    
+            <section class="w-full h-96 md:grid-cols-1  md:order-3  xl:order-4">
+                <div class="w-full h-full bg-no-repeat bg-cover bg-left-top" style="background-image:url('./dist/img/cup-2.png')">
+                    <div class=" w-full h-full bg-stone-900 flex flex-col justify-center items-center bg-opacity-50">
+                        <h2 class="text-white font-poppins px-3 py-2  text-4xl uppercase">OUR SOURCING</h2>
+                        <p class="font-fuzzy text-white font-bold text-xl">Costa Rica</p>
+                        <p class="font-fuzzy text-white font-bold text-xl">Kenya</p>
+                        <p class="font-fuzzy text-white font-bold text-xl">Brasil</p>
+                        <p class="font-fuzzy text-white font-bold text-xl">Columbia</p>
+                        <p class="font-fuzzy text-white font-bold text-xl">Ethiopia</p>
+                    </div>
+                </div>
+            </section>
+             <!-- ===================Collect & Precess Section divide=============== -->
+             <section class="w-full h-96 md:grid-cols-1 md:order-5  xl:order-6">
+                <div class="w-full h-full flex flex-row justify-center items-center bg-no-repeat bg-cover bg-center" style="background-image:url('./dist/img/bg-03.jpeg')"> 
+                </div>
+            </section>
+    
+            <section class="w-full h-96 md:grid-cols-1 md:order-6  xl:order-5">
+                <div class="w-full h-full bg-no-repeat bg-cover bg-left-top" style="background-image:url('./dist/img/cup.png')">
+                    <div class=" w-full h-full bg-stone-900 flex flex-col justify-center items-center bg-opacity-50">
+                        <h2 class="text-white font-poppins px-3 py-2  text-4xl uppercase">RESERVATIONS</h2>
+                        <p class="font-fuzzy text-white font-bold text-xl">Reservation numbers:</p>
+                        <p class="font-fuzzy text-white font-bold text-xl">+880 1722-440899</p>
+                        <p class="font-fuzzy text-white font-bold text-xl">+880 1641-640856</p>
+                    </div>
+                </div>
+            </section>
+           
+             <!-- ===================Collect & Precess Section divide=============== -->
+             <section class="w-full h-96 md:grid-cols-1  md:order-8  xl:order-8">
+                <div class="w-full h-full flex flex-row justify-center items-center bg-no-repeat bg-cover bg-center" style="background-image:url('./dist/img/01.jpg')"> 
+                </div>
+            </section>
+    
+            <section class="w-full h-96 md:grid-cols-1 md:order-7  xl:order-7">
+                <div class="w-full h-full bg-no-repeat bg-cover bg-left-top" style="background-image:url('./dist/img/beens.png')">
+                    <div class=" w-full h-full bg-stone-900 flex flex-col justify-center items-center bg-opacity-50">
+                        <h2 class="text-white font-poppins px-3 py-2  text-4xl uppercase">STORES</h2>
+                        <p class="font-fuzzy text-white font-bold text-xl">Dunsmuir Ave, LA</p>
+                        <p class="font-fuzzy text-white font-bold text-xl">Atkins Ave, NY</p>
+                        <p class="font-fuzzy text-white font-bold text-xl">Milk Street, Boston</p>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+    <!-- ===================Collect & Precess Section End=============== -->
+
+
+    <!-- ===================Promoter Brands Section Start=============== -->
+    <section class="w-full h-3/4 xl:h-1/2 flex flex-row justify-center items-center">
+        <img src="./dist/img/brand.png" alt="#" class="flex">
+        <img src="./dist/img/brand.png" alt="#" class="hidden md:flex">
+        <img src="./dist/img/brand.png" alt="#" class="hidden md:flex">
+        <img src="./dist/img/brand.png" alt="#" class="hidden xl:flex">
+        <img src="./dist/img/brand.png" alt="#" class="hidden xl:flex">
+        
+    </section>
+    <!-- ===================Promoter Brands Section End=============== -->
+
+    <!-- ===================Footer Section Start=============== -->
+    <!-- ===================Footer sub Section Start=============== -->
+    
+        <section class="w-full h-3/4 bg-cover grid grid-rows-2" style="background-image:url('./dist/img/pexels-joslyn-pickens-3833052.jpg')">
+            <div class="w-full h-full bg-stone-900 bg-opacity-80 flex flex-col justify-center items-center ">
+                <img src="./dist/img/logorm.png" alt="Logo">
+                <p class="text-white font-poppins lg:w-2/3 px-3 py-2  text-lg lg:text-xl text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus cum porro dolorem fuga repudiandae voluptates.</p>
+            </div>
+
+            <div class="w-full h-full bg-stone-900 bg-opacity-80 flex flex-col justify-center items-center pb-12">
+                <h2 class="text-white font-poppins px-3 py-2  text-2xl uppercase">STORES</h2>
+                <p class="text-white font-poppins px-3 py-2  text-md text-center">Dunsmuir Ave, Los Angeles, CA 90036, USA <br> Atkins Ave, Brooklyn, NY 11208, USA</p>
+
+               <div class="flex flex-row items-center divide-x-2 divide-gray-300 pt-12">
+                    <input type="text" class="w-56 h-12 md:w-72 flex justify-center items-center bg-transparent bg-opacity-0 border pl-2" placeholder="Your E-mail Address ..." >
+                    <div class="bg-white w-16 h-12 flex flex-row justify-center items-center">
+                        <i class="fa-regular fa-envelope text-2xl"></i>
+                    </div>
+                </input>
+                    
+               </div>
+            </div>
+        </section>    
+    
+    <!-- ===================Footer sub Section End=============== -->
+    <section class="w-full h-96 md:h-72 lg:h-32 flex flex-col lg:flex-row justify-start lg:justify-between items-center bg-footer space-y-8 lg:space-y-0 pt-12 lg:pt-4">
+        <div class="w-full flex flex-row justify-center items-center text-white text-md  font-seibold font-poppins no-underline ">
+            <p class="">© 2018 Qode Interactive, All Rights Reserved</p>
+        </div>
+
+        <div class="w-full flex flex-col md:flex-row justify-center items-center list-none md:space-x-4">
+            <li><a href="#" class="text-white text-md uppercase font-seibold font-poppins no-underline">Home</a></li>
+            <li><a href="#" class="text-white text-md uppercase font-seibold font-poppins no-underline">about</a></li>
+            <li><a href="#" class="text-white text-md uppercase font-seibold font-poppins no-underline">shop</a></li>
+            <li><a href="#" class="text-white text-md uppercase font-seibold font-poppins no-underline">contact</a></li>
+        </div>
+
+        <div class="w-full  list-none flex flex-row justify-center space-x-4">
+            <li class=""><a href="#" class="text-white text-xl uppercase font-seibold font-poppins no-underline"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class=""><a href="#" class="text-white text-xl uppercase font-seibold font-poppins no-underline"><i class="fa-brands fa-twitter"></i></a></li>
+            <li class=""><a href="#" class="text-white text-xl uppercase font-seibold font-poppins no-underline"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li class=""><a href="#" class="text-white text-xl uppercase font-seibold font-poppins no-underline"><i class="fa-brands fa-vimeo"></i></a></li>
+            <li class=""><a href="#" class="text-white text-xl uppercase font-seibold font-poppins no-underline"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        </div>
+
+    </section>
+
+
+    <!-- ===================Footer Section End=============== -->
+
+   
+   <script src="./dist/nav.js"></script>
+</body>
+</html>
